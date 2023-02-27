@@ -1,8 +1,8 @@
-#    .---------- constant part!
-#    vvvv vvvv-- the code from above
+# ---- constants ----------
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
+# -------------------------
 
 echo "Compiling..."
 if [[ $(nasm boot16.asm -f bin -o ./build/boot16-evos.bin) ]]; then
