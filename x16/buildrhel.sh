@@ -17,7 +17,7 @@ else
     echo -e "${GREEN}Build completed.${NC}"
 fi
 echo "Checking for running instances..."
-if [[ $(vmrun stop ~/vmware/evOS-testing/evOS-testing.vmx) ]]; then
+if [[$(vmrun stop ~/vmware/evOS-testing/evOS-testing.vmx) ]]; then
     echo -e "${GREEN}No running instances found. Starting VM...${NC}"
 else
     echo -e "${RED}Running instances found. Quitting and running new instance...${NC}"

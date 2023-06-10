@@ -21,7 +21,7 @@ mov AH, 00H            ;Video Mode number
 mov AL, 02H            ;Mode Number, refer the BIOS Function List above
 int   10H                  ;Call the function
 
-printStrColor welcomeMsg, b16_WHITE, b16_RED ; welcome!
+printStrColor welcomeMsg, b16_BLACK, b16_YELLOW ; welcome!
 printStr newline
 printStr verMsg
 printStr initMsg
